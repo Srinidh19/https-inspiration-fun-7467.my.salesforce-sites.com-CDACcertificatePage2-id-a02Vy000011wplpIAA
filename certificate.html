@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Certificate – Srinidh Sahadev Akula</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      min-height: 100vh;
+      background: #0d0d0d;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Lato', sans-serif;
+      padding: 2rem;
+    }
+
+    .page {
+      background: #fdf8f0;
+      width: 720px;
+      padding: 60px 64px;
+      position: relative;
+      border: 1px solid #d4b896;
+      box-shadow: 0 0 0 8px #0d0d0d, 0 0 0 10px #c9a96e, 0 30px 80px rgba(0,0,0,0.6);
+      animation: fadeUp 0.8s cubic-bezier(.22,.68,0,1.2) both;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(32px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Corner ornaments */
+    .page::before, .page::after {
+      content: '';
+      position: absolute;
+      width: 40px; height: 40px;
+      border-color: #c9a96e;
+      border-style: solid;
+    }
+    .page::before { top: 16px; left: 16px; border-width: 2px 0 0 2px; }
+    .page::after  { bottom: 16px; right: 16px; border-width: 0 2px 2px 0; }
+
+    .corner-br { position: absolute; bottom: 16px; left: 16px; width: 40px; height: 40px;
+      border: 2px solid #c9a96e; border-top: none; border-right: none; }
+    .corner-tl { position: absolute; top: 16px; right: 16px; width: 40px; height: 40px;
+      border: 2px solid #c9a96e; border-bottom: none; border-left: none; }
+
+    .badge {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    .badge svg { width: 56px; height: 56px; }
+
+    .label-top {
+      text-align: center;
+      font-family: 'Lato', sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+      color: #c9a96e;
+      margin-bottom: 6px;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 38px;
+      color: #1a1a1a;
+      text-align: center;
+      line-height: 1.1;
+      margin-bottom: 8px;
+    }
+
+    .divider {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 24px 0;
+    }
+    .divider span { flex: 1; height: 1px; background: linear-gradient(to right, transparent, #c9a96e, transparent); }
+    .divider em { font-style: normal; color: #c9a96e; font-size: 18px; }
+
+    .fields { display: flex; flex-direction: column; gap: 18px; }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid #e8ddd0;
+      animation: slideIn 0.5s ease both;
+    }
+    .field:last-child { border-bottom: none; padding-bottom: 0; }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(-12px); }
+      to   { opacity: 1; transform: translateX(0); }
+    }
+    .field:nth-child(1) { animation-delay: 0.15s; }
+    .field:nth-child(2) { animation-delay: 0.25s; }
+    .field:nth-child(3) { animation-delay: 0.35s; }
+    .field:nth-child(4) { animation-delay: 0.45s; }
+    .field:nth-child(5) { animation-delay: 0.55s; }
+    .field:nth-child(6) { animation-delay: 0.65s; }
+
+    .field-key {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #c9a96e;
+    }
+
+    .field-value {
+      font-size: 17px;
+      font-weight: 400;
+      color: #1a1a1a;
+      font-family: 'Lato', sans-serif;
+    }
+
+    .field-value.name {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      font-weight: 600;
+      color: #111;
+    }
+
+    .field-value.score {
+      font-size: 26px;
+      font-weight: 700;
+      color: #2a6e3f;
+      letter-spacing: 1px;
+    }
+
+    .footer {
+      margin-top: 36px;
+      text-align: center;
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #bbb;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="corner-br"></div>
+    <div class="corner-tl"></div>
+
+    <div class="badge">
+      <!-- Seal icon -->
+      <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="28" cy="28" r="26" stroke="#c9a96e" stroke-width="1.5"/>
+        <circle cx="28" cy="28" r="20" stroke="#c9a96e" stroke-width="1"/>
+        <path d="M28 12 L30.5 22 L41 22 L32.5 28 L35 38 L28 32 L21 38 L23.5 28 L15 22 L25.5 22 Z"
+              fill="#c9a96e" opacity="0.9"/>
+      </svg>
+    </div>
+
+    <p class="label-top">Certificate of Achievement</p>
+    <h1>Digital 101 – 30 Hours</h1>
+
+    <div class="divider"><span></span><em>✦</em><span></span></div>
+
+    <div class="fields">
+      <div class="field">
+        <span class="field-key">Certificate ID</span>
+        <span class="field-value">FSP/2026/4/10284472</span>
+      </div>
+      <div class="field">
+        <span class="field-key">Candidate</span>
+        <span class="field-value name">Srinidh Sahadev Akula</span>
+      </div>
+      <div class="field">
+        <span class="field-key">Candidate Email</span>
+        <span class="field-value">Akulwarsrinidh@gmail.com</span>
+      </div>
+      <div class="field">
+        <span class="field-key">Assessment Name</span>
+        <span class="field-value">Digital 101 – 30 Hours</span>
+      </div>
+      <div class="field">
+        <span class="field-key">Date of Issue</span>
+        <span class="field-value">14/04/2026</span>
+      </div>
+      <div class="field">
+        <span class="field-key">Percentage Marks Overall</span>
+        <span class="field-value score">87.00%</span>
+      </div>
+    </div>
+
+    <div class="footer">Issued &nbsp;·&nbsp; April 2026 &nbsp;·&nbsp; Verified</div>
+  </div>
+</body>
+</html>
